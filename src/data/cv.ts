@@ -74,7 +74,7 @@ export const awards = [
 	{
 		title: 'Fulbright Student Award for 2025-2026',
 		year: '2025',
-		value: '$25,000',
+		value: '$25,000 USD',
 		description: 'Merit-based residential exchange award for Canadian graduate students wishing to conduct research in the United States.',
 	},
 	{
@@ -86,33 +86,39 @@ export const awards = [
 	{
 		title: 'UVic Excellence Scholarship',
 		year: '2020-2024',
-		value: '$24,000',
+		value: '$24,000 CAD',
 		description: 'Given to incoming UVic students with outstanding academic record',
 	},
 	{
 		title: "Woods Trust Scholarship",
 		year: '2024',
-		value: '$1,169',
+		value: '$1,169 CAD',
 		description: 'Awarded to academically outstanding undergraduate engineering students at UVic.',
 	},
 	{
 		title: "President's Scholarship",
 		year: '2024',
-		value: '$1,331',
+		value: '$1,331 CAD',
 		description: 'Awarded to academically outstanding undergraduate students in all faculties at UVic.',
 	},
 	{
 		title: "Dean's Entrance Scholarship",
 		year: '2020',
-		value: '$1,331',
+		value: '$1,331 CAD',
 		description: 'Awarded to academically outstanding students entering engineering at UVic.',
 	},
 	{
 		title: "\"Stand out from the crowd\" prize in Physics and astronomy",
 		year: '2021',
-		value: '$500',
-		description: 'Awarded to the student with the second-highest grade in the most challenging undergraduate course ' +
+		value: '$600 CAD',
+		description: 'Awarded to the student with the highest grade in the most challenging undergraduate course ' +
 			'in physics and astronomy at UVic.',
+	},
+	{
+		title: "3rd Place in UVic AWS DeepRacer Competition 2024",
+		year: '2024',
+		value: '',
+		description: 'Trained a reinforcement learning model to race an autonomous car around a race track in 9.016 seconds',
 	},
 ];
 
