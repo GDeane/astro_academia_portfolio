@@ -7,22 +7,22 @@ export const profile = {
 		{
 			title: 'Game Theory',
 			description: 'I enjoy modeling competition and cooperation in games, economics, and society',
-			field: 'Applied Mathematics'
+			field: 'mathematics',
 		},
 		{
 			title: 'MultiAgent Systems',
 			description: 'I am interested in how self-interested agents (AI or human) interact in various settings',
-			field: 'Machine Learning'
+			field: 'computer-science'
 		},
 		{
 			title: 'Theory of Mind',
 			description: 'It fascinates me to think about how humans (and AI systems) model the world',
-			field: 'Cognitive Science'
+			field: 'physics'
 		},
 		{
 			title: 'Artificial Intelligence',
 			description: 'I believe that attempting to build and understand AI systems leads us to a greater understanding of our own cognition',
-			field: 'Computer Science'
+			field: 'engineering'
 		},
 	],
 }
