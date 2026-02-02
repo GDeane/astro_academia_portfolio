@@ -20,8 +20,8 @@ const { elements } = Astro.props
         </>
         : <>
       <details class="card bg-base-200" open={false}>
-        <summary class="card-body cursor-pointer [&_h3]:mb-1">
-          <h2 class="card-title text-xl">
+        <summary class="card-body cursor-pointer space-y-1">
+          <span class="block text-xl font-semibold">
             <a
               href={template.base + element.link}
               class='hover:text-accent'
@@ -29,14 +29,14 @@ const { elements } = Astro.props
             >
               {element.title}
             </a>
-          </h2>
-          <p class='text-base'>
+          </span>
+          <span class='block text-base'>
             <span class='font-medium'>Authors:</span>{' '}
             <span set:html={highlightAuthor(element.authors as string)} />
-          </p>
-          <p class='text-sm text-base-content/80'>
+          </span>
+          <span class='block text-sm text-base-content/80'>
             <span class='italic'>{element.journal}</span> • {element.time}
-          </p>
+          </span>
         </summary>
         <div class="card-body pt-0">
           <p class='text-sm text-base-content/80'>{element.abstract}</p>
