@@ -70,6 +70,52 @@ export const skills = [
 	},
 ];
 
+export const awards = [
+	{
+		title: 'Fulbright Student Award for 2025-2026',
+		year: '2025',
+		value: '$25,000',
+		description: 'Merit-based residential exchange award for Canadian graduate students wishing to conduct research in the United States.',
+	},
+	{
+		title: 'IEEE Victoria Section Gold Medal in Software Engineering',
+		year: '2025',
+		value: '',
+		description: 'Awarded to the top software engineering student at UVic.',
+	},
+	{
+		title: 'UVic Excellence Scholarship',
+		year: '2020-2024',
+		value: '$24,000',
+		description: 'Given to incoming UVic students with outstanding academic record',
+	},
+	{
+		title: "Woods Trust Scholarship",
+		year: '2024',
+		value: '$1,169',
+		description: 'Awarded to academically outstanding undergraduate engineering students at UVic.',
+	},
+	{
+		title: "President's Scholarship",
+		year: '2024',
+		value: '$1,331',
+		description: 'Awarded to academically outstanding undergraduate students in all faculties at UVic.',
+	},
+	{
+		title: "Dean's Entrance Scholarship",
+		year: '2020',
+		value: '$1,331',
+		description: 'Awarded to academically outstanding students entering engineering at UVic.',
+	},
+	{
+		title: "\"Stand out from the crowd\" prize in Physics and astronomy",
+		year: '2021',
+		value: '$500',
+		description: 'Awarded to the student with the second-highest grade in the most challenging undergraduate course ' +
+			'in physics and astronomy at UVic.',
+	},
+];
+
 export const papers = [
 	{
 		title: 'Distributed ML Property Attestation Using TEEs (unpublished)',

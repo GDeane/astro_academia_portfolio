@@ -1,0 +1,28 @@
+---
+import BetterIcon from './BetterIcon.astro'
+import type { Award } from '@/types/cv'
+
+interface Props {
+  awards: Award[]
+}
+
+const { awards } = Astro.props
+---
+<div class="grid gap-6 md:grid-cols-2">
+  {awards.map((award) => (
+    <div class="flex gap-4 p-6 bg-base-200 rounded-xl text-base-content h-full">
+      <BetterIcon>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M8 8.5V4h8v4.5A4 4 0 0 1 12 12a4 4 0 0 1-4-3.5Z" />
+          <path stroke-linecap="round" stroke-linejoin="round" d="M8 4H4v2a4 4 0 0 0 4 4m8-6h4v2a4 4 0 0 1-4 4m-4 2v4" />
+          <path stroke-linecap="round" stroke-linejoin="round" d="M10 20h4M9 16h6" />
+        </svg>
+      </BetterIcon>
+      <div class="flex-1">
+        <h3 class="text-xl font-semibold mb-1">{award.title}</h3>
+        <p class="text-sm text-base-content/70 mb-2">{award.value ? `${award.value} | ${award.year}` : award.year}</p>
+        <p class="text-base leading-relaxed">{award.description}</p>
+      </div>
+    </div>
+  ))}
+</div>
