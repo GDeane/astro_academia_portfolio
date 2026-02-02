@@ -1,51 +1,56 @@
 ---
 import { isSkill } from '@/types/cv';
 import type { Skill, Publication } from '@/types/cv';
-import { highlightAuthor } from '@/lib/utils'
-import {template} from "@/settings.ts";
+import { highlightAuthor } from '@/lib/utils';
+import { template } from '@/settings';
 
 interface Props {
-	elements: (Skill | Publication)[]
+  elements: (Skill | Publication)[]
 }
 
 const { elements } = Astro.props
 ---
-<ul class='space-y-8'>
+<ul class='space-y-6'>
   {elements.map((element, index) => (
     <li class='group'>
       { isSkill(element)
         ? <>
         <h3 class='text-lg font-bold mb-2'>{element.title}</h3>
         <p>{element.description}</p>
-        </> : <>
-      <details class="rounded-lg bg-base-200 p-4 [&_summary]:list-none [&_summary]:cursor-pointer">
-        <summary class="flex flex-col gap-1">
-          <a
-            href={template.base + element.link}
-            class='block hover:text-accent transition-colors duration-200'
-            target='_blank'
-          >
-            <h3 class='text-lg font-bold mb-1'>{element.title}</h3>
-          </a>
+        </>
+        : <>
+      <details class="card bg-base-200" open={false}>
+        <summary class="card-body cursor-pointer [&_h3]:mb-1">
+          <h2 class="card-title text-xl">
+            <a
+              href={template.base + element.link}
+              class='hover:text-accent'
+              target='_blank'
+            >
+              {element.title}
+            </a>
+          </h2>
           <p class='text-base'>
             <span class='font-medium'>Authors:</span>{' '}
-            <span
-              set:html={highlightAuthor(element.authors as string)}
-            />
+            <span set:html={highlightAuthor(element.authors as string)} />
           </p>
           <p class='text-sm text-base-content/80'>
-            <span class='italic'>{element.journal}</span> •{' '}
-            {element.time}
+            <span class='italic'>{element.journal}</span> • {element.time}
           </p>
         </summary>
-        <div class="mt-3 text-base">
-          <p>{element.abstract}</p>
+        <div class="card-body pt-0">
+          <p class='text-sm text-base-content/80'>{element.abstract}</p>
+          <div class='card-actions justify-end mt-2'>
+            <a href={template.base + element.link} class='btn btn-sm btn-secondary text-secondary-content' target='_blank'>
+              Read Paper
+            </a>
+          </div>
         </div>
       </details>
       </>
-    }
-    {/* Uncomment this line to add a small border bottom for each element
-    {index !== elements.length -1 && <hr class="mt-6 border-primary/40" />}  */}
+      }
+      {/* Uncomment this line to add a small border bottom for each element
+      {index !== elements.length -1 && <hr class="mt-6 border-primary/40" />}  */}
     </li>
   ))}
 </ul>
