@@ -2,7 +2,7 @@
 import { Image } from 'astro:assets'
 import {profile} from '../../settings'
 import SocialIcons from './SocialIcons.astro'
-import ProfilePictures from '@/assets/profile_pictures.jpg'
+import ProfilePictures from '@/assets/gavin_deane_picture_resized.jpg'
 import { getCollection } from 'astro:content'
 import { template } from '@/settings'
 
@@ -17,9 +17,10 @@ const {fullName, title} = profile
 		<div>
 			<div class='flex justify-center items-center flex-col'>
 				<Image
-					class='mask mask-circle size-44'
+					class='mask mask-circle size-44 object-cover object-top'
 					src={ProfilePictures}
 					alt={`Profile picture of ${fullName}`}
+					quality={90}
 				/>
 				<h1 class="text-lg font-black mt-8 hidden lg:block">{title} <span>{fullName}</span></h1>
 			</div>

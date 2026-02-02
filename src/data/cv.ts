@@ -70,9 +70,9 @@ export const skills = [
 	},
 ];
 
-export const publications = [
+export const papers = [
 	{
-		title: 'Distributed ML Property Attestation Using TEEs',
+		title: 'Distributed ML Property Attestation Using TEEs (unpublished)',
 		authors: 'Idil Kara, Gavin Deane, Artemiy Vishnyakov',
 		journal: '',
 		time: 'December 2025',
@@ -103,7 +103,7 @@ export const publications = [
 			'the number of workers and epochs.\n',
 	},
 	{
-		title: 'Prefill-Only Optimizations for Prefill-Decode Disaggregation in vLLM',
+		title: 'Prefill-Only Optimizations for Prefill-Decode Disaggregation in vLLM (unpublished)',
 		authors: 'Sejal Agarwal, Maksym Bidnyi, Joshua Caiata, Gavin Deane',
 		journal: '',
 		time: 'December 2025',

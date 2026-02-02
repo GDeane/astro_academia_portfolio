@@ -1,15 +1,15 @@
 ---
 import Layout from "@/layouts/Layout.astro";
-import { publications } from "@/data/cv";
+import { papers } from "@/data/cv";
 import { highlightAuthor } from "@/lib/utils";
 import {template} from "@/settings";
 
-const ALL_PAPERS = publications; // This will be replaced with dynamic data later
+const ALL_PAPERS = papers; // This will be replaced with dynamic data later
 ---
 
 <Layout title="Papers">
   <div class="prose max-w-none">
-    <h1 class="text-3xl font-bold mb-8">Publications</h1>
+    <h1 class="text-3xl font-bold mb-8">Papers</h1>
 
     <div class="space-y-8">
       {

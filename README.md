@@ -18,7 +18,7 @@ Fork this repository to create your new website starting from this template.
 
 ## How to Create a CV Using the `cv.ts` File
 
-The `cv.ts` file located in the `src/data/` directory is used to define the structure and content of your CV. This file exports an object containing various sections of your CV, such as education, experience, publications, and more.
+The `cv.ts` file located in the `src/data/` directory is used to define the structure and content of your CV. This file exports an object containing various sections of your CV, such as education, experience, papers, and more.
 
 ### Example Structure of `cv.ts`
 

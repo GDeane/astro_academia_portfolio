@@ -1,6 +1,6 @@
 ---
 import Layout from '@/layouts/Layout.astro'
-import { experiences, education, skills, publications } from '../data/cv'
+import { experiences, education, skills, papers } from '../data/cv'
 import CvTimeline from '@/components/ui/CvTimeline.astro'
 
 import type { Experience, Education, Publication } from '../types/cv'
@@ -38,8 +38,8 @@ if (education.length > 0) {
 	})
 }
 
-if (publications.length > 0) {
-	orderedPublications = publications.sort((a, b) => {
+if (papers.length > 0) {
+	orderedPublications = papers.sort((a, b) => {
 		return orderElement(a, b)
 	})
 }
