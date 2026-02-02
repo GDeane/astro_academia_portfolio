@@ -33,7 +33,7 @@ export const education = [
 	{
 		school: 'University of Victoria',
 		time: 'Sep 2020 - Apr 2024',
-		degree: 'Bachelor of Software Engineering - With Distinction - Co-op Program',
+		degree: 'Bachelor of Software Engineering - With Distinction',
 		location: 'Victoria, British Columbia, Canada',
 		description: 'Awarded IEEE Victoria Section Gold Medal (top BSEng student)',
 	},
