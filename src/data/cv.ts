@@ -128,7 +128,7 @@ export const papers = [
 		authors: 'Idil Kara, Gavin Deane, Artemiy Vishnyakov',
 		journal: '',
 		time: 'December 2025',
-		link: '/src/assets/papers/Distributed_ML_Property_Attestation_using_TEEs.pdf',
+		link: '/papers/Distributed_ML_Property_Attestation_using_TEEs.pdf',
 		abstract: 'As large machine learning (ML) providers adopt model cards to\n'+
 			'document how models are trained, the question becomes: how can a\n'+
 			'verifier be sure that a card is honest? Prior work such as Laminator\n'+
@@ -159,7 +159,7 @@ export const papers = [
 		authors: 'Sejal Agarwal, Maksym Bidnyi, Joshua Caiata, Gavin Deane',
 		journal: '',
 		time: 'December 2025',
-		link: '/src/assets/papers/Prefill_Only_Optimizations_for_Prefill_Decode_Disaggregation_in_vLLM.pdf',
+		link: '/papers/Prefill_Only_Optimizations_for_Prefill_Decode_Disaggregation_in_vLLM.pdf',
 		abstract: 'Disaggregating the prefill and decode steps in\n'+
 			'Large Language Model (LLM) inference has allowed for optimizing throughput and latency separately. Prior work has shown that hybrid prefilling\n'+
 			'and Job Completion Time (JCT)-aware scheduling can accelerate prefill-only workloads. This\n'+
