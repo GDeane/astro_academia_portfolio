@@ -49,7 +49,7 @@ export const template = {
 	darkTheme: 'night', // Select one of the Daisy UI Themes or create your own
 	excerptLength: 200,
 	postPerPage: 5,
-    base: '' // Repository name starting with /
+    base: '/astro_academia_portfolio' // Repository name starting with /
 }
 
 export const seo = {
