@@ -42,14 +42,14 @@ export const social = {
 }
 
 export const template = {
-	website_url: 'https://gdeane.github.io', // Astro needs to know your site’s deployed URL to generate a sitemap. It must start with http:// or https://
+	website_url: 'https://gavindeane.com', // Astro needs to know your site’s deployed URL to generate a sitemap. It must start with http:// or https://
 	menu_left: false,
 	transitions: true,
 	lightTheme: 'emerald', // Select one of the Daisy UI Themes or create your own
 	darkTheme: 'night', // Select one of the Daisy UI Themes or create your own
 	excerptLength: 200,
 	postPerPage: 5,
-    base: '/astro_academia_portfolio' // Repository name starting with /
+    base: '' // Repository name starting with /
 }
 
 export const seo = {
