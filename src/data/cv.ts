@@ -124,6 +124,27 @@ export const awards = [
 
 export const papers = [
 	{
+		title: 'When AI Plays Politics: Using Diplomacy to elicit Theory of Mind in LLMs (unpublished)',
+		authors: 'Gavin Deane',
+		journal: '',
+		time: 'April 2026',
+		link: '/papers/When_AI_Plays_Politics_Using_Diplomacy_to_elicit_Theory_of_Mind_in_LLMs.pdf',
+		abstract: 'Recent work suggests Large Language Models (LLMs) have shown emergent \n' +
+			'Theory of Mind (ToM) comparable to adult humans for short-story evaluations. \n' +
+			'This capability presents opportunities for cooperation and AI safety. However, \n' +
+			'it remains unclear whether showcased LLM ToM capabilities are memorization-based \n' +
+			'or whether they are applied strategically. To investigate this, we evaluate \n' +
+			'ToM in three frontier LLMs using the board game Diplomacy, a negotiation game \n' +
+			'that requires second-order ToM to lie and reason about opponents’ beliefs with \n' +
+			'incomplete information. We use a recently created test harness to run games with \n' +
+			'the Gemini model, then probe the latest Gemini, ChatGPT, and Claude models at \n' +
+			'critical states to predict target relationships and orders. In addition, we analyze \n' +
+			'a game moment where Gemini uses sophisticated deception to successfully impose \n' +
+			'false beliefs on its opponent. Concerningly, we find that while Gemini appears \n' +
+			'capable of sophisticated deceit, models given the victim’s information set appear \n' +
+			'unable to detect deception ahead of time. This is bad news for ToM-based alignment approaches.',
+	},
+	{
 		title: 'Distributed ML Property Attestation Using TEEs (unpublished)',
 		authors: 'Idil Kara, Gavin Deane, Artemiy Vishnyakov',
 		journal: '',
